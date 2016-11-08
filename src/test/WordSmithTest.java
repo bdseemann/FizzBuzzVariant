@@ -18,4 +18,9 @@ public class WordSmithTest extends TestCase{
 		assertEquals(expected, result);
 	}
 
+	public void testReturnsSmith() {
+		String expected = "smith";
+		String result = WordSmith.CheckInput(5);
+		assertEquals(expected, result);
+	}
 }
