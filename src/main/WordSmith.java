@@ -3,9 +3,13 @@ package main;
 public class WordSmith {
 
 	public static String CheckInput(int value) {
+		if (divisibleByThree(value) && divisibleByFive(value)) {
+			return "wordsmith";
+		}
 		if (divisibleByThree(value)) {
 			return "word";
-		} else if (divisibleByFive(value)) {
+		}
+		if (divisibleByFive(value)) {
 			return "smith";
 		}
 		return String.valueOf(value);
